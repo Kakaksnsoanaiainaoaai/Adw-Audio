@@ -1,0 +1,141 @@
+/* RESET */
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #0d0d0d;
+  color: white;
+  text-align: center;
+}
+
+/* HEADER */
+.hero {
+  position: relative;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.3);
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255,255,255,0.5);
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger span {
+  display: block;
+  height: 4px;
+  background: white;
+  margin: 5px 0;
+  border-radius: 4px;
+  transition: all 0.4s ease;
+}
+
+/* Animasi Hamburger jadi X */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(9px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-9px);
+}
+
+/* MENU NAVIGASI */
+.nav-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 70%;
+  height: 100%;
+  background: rgba(20, 20, 20, 0.95);
+  backdrop-filter: blur(8px);
+  transition: right 0.4s ease;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu.active {
+  right: 0;
+}
+
+.nav-menu ul {
+  list-style: none;
+}
+
+.nav-menu ul li {
+  margin: 20px 0;
+}
+
+.nav-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.nav-menu ul li a:hover {
+  color: #ff6600;
+}
+
+/* SECTION */
+section {
+  padding: 40px 20px;
+}
+
+/* SUPPORT LOGO */
+.support-logos img {
+  width: 100px;
+  margin: 15px;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.zoom-on-hover:hover {
+  transform: scale(1.15);
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  background: #111;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  margin-bottom: 10px;
+  background: #25d366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background: #1ebd5a;
+}
